@@ -146,12 +146,15 @@ nav .fas{
     .services-container .srv-cont{
         display: block !important;
         text-align: center;
+        width: 100% !important;
     }
     .services-container .srv-cont i{
         margin: 20px 20px;
     }
     .services-container .srv-cont h2{
         font-size: 28px !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .design{
         height: 900px !important;
@@ -187,6 +190,17 @@ nav .fas{
     }
     .portfolio .imgs-container .but{
         display: none !important;
+    }
+    .main-heading p{
+        width: 100% !important;
+        font-size: 10px;
+    }
+    .services-container .srv-cont p{
+        width: 50% !important;
+        margin: auto !important;
+    }
+    .main-heading{
+        padding: 100px 0 !important;
     }
 }
 nav .fas:hover + ul{
@@ -307,6 +321,8 @@ nav .fas:hover + ul{
     font-size: 14px;
     width: 500px;
     margin: 0 auto 70px;
+    display: flex;
+    justify-content: center;
 }
 .services-container{
     display: grid;
@@ -1034,4 +1050,15 @@ nav .fas:hover + ul{
     position: relative;
     font-size: 150%;
     top: -3px;
+}
+@media (max-width:400px) {
+    .contact .content{
+        flex-direction: column;
+    }
+    .main-heading{
+        max-width: 100% !important;
+    }
+    .main-heading h2{
+        font-size: 18px;
+    }
 }
