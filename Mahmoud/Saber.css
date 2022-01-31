@@ -10,6 +10,10 @@
     --main-color:rgba(255, 255, 0, 0.3);
     --secondary-color:rgba(252, 252, 18, 1);
 }
+body{
+    max-width: 100% !important;
+    margin: auto !important;
+}
 img::selection{
     background-color: transparent;
     color: transparent;
@@ -146,14 +150,15 @@ nav .fas{
     .services-container .srv-cont{
         display: block !important;
         text-align: center;
-        width: 100% !important;
+        width: 50% !important;
+        margin: auto;
     }
     .services-container .srv-cont i{
         margin: 20px 20px;
     }
     .services-container .srv-cont h2{
         font-size: 28px !important;
-        margin: 0 !important;
+        margin-bottom: 30px !important;
         padding: 0 !important;
     }
     .design{
@@ -192,11 +197,12 @@ nav .fas{
         display: none !important;
     }
     .main-heading p{
-        width: 100% !important;
+        width: 75% !important;
         font-size: 10px;
+        margin: auto !important;
     }
     .services-container .srv-cont p{
-        width: 50% !important;
+        width: 100% !important;
         margin: auto !important;
     }
     .main-heading{
@@ -213,10 +219,10 @@ nav .fas:hover + ul{
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: 0;
 }
-.landing img{
+.landing{
     height: 100vh;
     background-size: cover;
-    width: 100%;
+    background-image: url("background.jpeg");
     position: relative;
 }
 .landing .overlay{
@@ -240,7 +246,7 @@ nav .fas:hover + ul{
     justify-content: flex-end;
 }
 .landing .text .content{
-    max-width: 450px;
+    max-width: 300px;
 }
 .landing .text .content h1{
     font-size: 35px;
@@ -505,6 +511,7 @@ nav .fas:hover + ul{
 }
 .video{
     position: relative;
+    overflow: hidden;
 }
 .video::before{
     content: "";
@@ -556,6 +563,9 @@ nav .fas:hover + ul{
     margin-top: -50px;
 }
 @media (max-width:767px) {
+    .video .text h2{
+        font-size: 20px;
+    }
     .about img{
         bottom: -20px;
         margin-top: -20px;
@@ -1059,6 +1069,6 @@ nav .fas:hover + ul{
         max-width: 100% !important;
     }
     .main-heading h2{
-        font-size: 18px;
+        font-size: 28px;
     }
 }
